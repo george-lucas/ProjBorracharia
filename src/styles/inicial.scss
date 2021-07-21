@@ -1,20 +1,22 @@
+.background{
+    position: relative;
+    display: flex;
+    background-size: cover;
+    position: fixed;
+    
+}
 
 #auth {
     display: flex;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: fixed;
 
-    img{
-        position: absolute;
-        height: 100vh;
-        padding: 0;
-        background-size: 'cover';
 
-       // opacity: 90%;
-    }
     aside{
         flex: 7;
 
-        background: black;
+        
         color: white;
 
         display: flex;
@@ -32,8 +34,9 @@
     }
     main {
         flex:5;
-    
+        background: rgba(17, 17, 17, 0.8);
 
+        
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -42,7 +45,8 @@
         padding: 200px 32px;
 
         strong{
-                        
+
+            color: white;  
             font-size: 40px;
             align-items: center;
 
@@ -59,25 +63,31 @@
             border-radius: 10px;
             border: 1px solid black;
             background-color: gray;
-            color: #fff;
+            color: #FFFFFF;
             height: 45px;
             width: 450px;
             padding: 10px;
-            margin:10px;
+            margin:15px;
+            border: solid gray 2px;
 
             font-size: 17px;
+
+            -webkit-box-shadow: inset 1px 1px 20px 0 #000000;
+            -moz-box-shadow: inset 1px 1px 20px 0 #000000;
+            box-shadow: inset 1px 1px 20px 0 #000000;
+            text-shadow: 1px 1px 20px #000000;
         }
         .buttonSubmit{
             text-align:  center;
 
         }
         .buttonAuth {
-            background: #D6DFE9;
-            background-image: -webkit-linear-gradient(top, #D6DFE9, #14243E);
-            background-image: -moz-linear-gradient(top, #D6DFE9, #14243E);
-            background-image: -ms-linear-gradient(top, #D6DFE9, #14243E);
-            background-image: -o-linear-gradient(top, #D6DFE9, #14243E);
-            background-image: -webkit-gradient(to bottom, #D6DFE9, #14243E);
+            background: gray;
+            background-image: -webkit-linear-gradient(top, gray, #14243E);
+            background-image: -moz-linear-gradient(top, gray, #14243E);
+            background-image: -ms-linear-gradient(top, gray, #14243E);
+            background-image: -o-linear-gradient(top, gray, #14243E);
+            background-image: -webkit-gradient(to bottom, gray, #14243E);
 
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
@@ -94,7 +104,7 @@
             -moz-box-shadow: inset 1px 1px 20px 0 #000000;
             box-shadow: inset 1px 1px 20px 0 #000000;
             text-shadow: 1px 1px 20px #000000;
-            border: solid #337FED 1px;
+            border: solid gray 1px;
             text-decoration: none;
             display: inline-block;
             cursor: pointer;
